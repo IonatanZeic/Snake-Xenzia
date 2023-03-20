@@ -16,4 +16,6 @@ Game Description:
 The game can be paused and resumed when the user decides, except when there is a special apple on the board
 
 If the snake hits the wall or bites himself, a game over screen will appear and the score will be displayed
+
+Photos of the game can be found in GamePhotos.png
                 
