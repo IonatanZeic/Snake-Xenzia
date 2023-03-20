@@ -5,18 +5,18 @@ public class TimerSpecial extends GamePanel {
     Timer timer2 = new Timer();
     private boolean timerOn = true;
 
-    public  boolean isTimerOn() {
-        return timerOn;
+    TimerSpecial(int seconds) {
+//schedule the task
+        timer2.schedule(new RemindTask(), seconds * 1000L);
     }
 
-    TimerSpecial(int seconds) {
-//schedule the task  
-        timer2.schedule(new RemindTask(), seconds * 1000);
+    public boolean isTimerOn() {
+        return timerOn;
     }
 
     class RemindTask extends TimerTask {
         public void run() {
-            timerOn  = false;
+            timerOn = false;
 //terminate the timer thread  
             timer2.cancel();
         }
